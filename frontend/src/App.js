@@ -38,7 +38,7 @@ import ScrollToTopButton from './components/ScrollButton';
         };
 
         try {
-          const response = await axios.post('http://localhost:5000/send-email', data);
+          const response = await axios.post('https://gtxcompany-com.onrender.com', data);
           setStatus(response.data.message);
         } catch (error) {
           setStatus('Error sending email');
