@@ -1,0 +1,140 @@
+.container {
+  padding: 70px 10%;
+}
+
+.Container__H1 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+
+@media screen and (min-width : 0px) and (max-width : 800px) { 
+
+  .container {
+    padding: 70px 5%;
+  }
+  
+
+}
+
+.Success__Message {
+  z-index: 1400;
+  width: 325px;
+  height: 150px;
+
+  background-color: #050014;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  border-radius: 4px;
+  /* visibility: hidden; */
+  transition: 0.4s ;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #44ff48;
+
+
+      position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 1111;
+    background: #000000;
+    box-shadow: 0px 0px 4px #44ff48ed;
+      width: 325px;
+  height: 150px;
+    transform: translate(-50%, -50%) scale(1);
+}
+.Failed__Message {
+
+      position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 1111;
+    background: #000000;
+    box-shadow: 0px 0px 4px red;
+      width: 325px;
+  height: 150px;
+    transform: translate(-50%, -50%) scale(1);
+    /* visibility: hidden; */
+
+
+}
+
+.showadv {
+    /* top: 50%;
+    transform: translate(-50%, -50%) scale(1); */
+visibility: visible;
+}
+
+
+.Success__Message h2 {
+  text-align: center;
+  margin: 18px 0 5px 0;
+  color: #44ff48;
+}
+.Failed__Message h2 {
+  text-align: center;
+  margin: 18px 0 5px 0;
+  color: #ff0000;
+}
+
+.Success__Message p {
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: 1px;
+  padding: 5px 20px;
+  text-transform: capitalize;
+  color: #fff;
+}
+.Failed__Message p {
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: 1px;
+  padding: 5px 20px;
+  text-transform: capitalize;
+  color: #fff;
+}
+
+.Success__Message button {
+  text-align: center;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%);
+  padding: 5px 40px;
+  border-radius: 10px;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  font-size: 18px;
+  color: white;
+  background: #44ff48;
+  border: 2px solid #44ff48;
+  transition: 0.3s;
+}
+.Failed__Message button {
+  text-align: center;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%);
+  padding: 5px 40px;
+  border-radius: 10px;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  font-size: 18px;
+  color: white;
+  background: #ff0000;
+  border: 2px solid #ff0000;
+  transition: 0.3s;
+}
+
+.Success__Message button:hover {
+  background-color: transparent;
+ 
+}
+.Failed__Message button:hover {
+  background-color: transparent;
+ 
+}

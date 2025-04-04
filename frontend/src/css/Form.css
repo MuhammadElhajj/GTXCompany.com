@@ -1,0 +1,119 @@
+#emailForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.Sender__Part , .ReplyTo__Part{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+
+.Message__Part {
+    display: flex;
+    flex-direction: column;
+}
+.Sender__Part__Name , .Sender__Part__Email , .ReplyTo__Part__Name , .ReplyTo__Part__Email {
+width: 49%;
+border: 0;
+outline: 0;
+padding: 10px ;
+border-radius: 7px ;
+/* box-shadow: 0 0 5px #ff9800; */
+border: 1px solid #ccc;
+background: #171717;
+color: #fff;
+}
+
+.Sender__Part__Name:focus::placeholder , .Sender__Part__Email:focus::placeholder , .ReplyTo__Part__Name:focus::placeholder , .ReplyTo__Part__Email:focus::placeholder {
+    opacity: 0;
+ }
+
+
+.Sender__Part__Email:invalid:not(:placeholder-shown) , .ReplyTo__Part__Email:invalid:not(:placeholder-shown)  {
+    border-color:  red;
+  
+}
+.Sender__Part__Email:valid , .ReplyTo__Part__Email:valid {
+    border-color: rgb(0, 255, 64);
+   
+}
+.Message__Part__Subject {
+    width: 100%;
+border: 0;
+outline: 0;
+padding: 10px ;
+border-radius: 15px;
+margin-bottom: 10px;
+border-radius: 7px ;
+
+border: 1px solid #ccc;
+background: #171717;
+color: #fff;
+}
+.Message__Part__Message {
+    width: 100%;
+    height: 150px;
+border: 0;
+outline: 0;
+padding: 10px ;
+margin-bottom: 10px;
+resize: none;
+border-radius: 7px ;
+/* box-shadow: 0 0 5px #ff9800; */
+border: 1px solid #ccc;
+background: #171717;
+color: #fff;
+}
+.Recipients__Part__Input {
+    width: 100%;
+   
+border: 0;
+outline: 0;
+padding: 10px ;
+margin-bottom: 10px;
+resize: none;
+border-radius: 7px ;
+/* box-shadow: 0 0 5px #ff9800; */
+border: 1px solid #ccc;
+background: #171717;
+color: #fff;
+}
+.Sender__Part__H2 , .ReplyTo__Part__H2 , .Message__Part__H2 , .Recipients__Part__H2 {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 10px 0;
+    color: #ff9800;
+
+}
+
+.Send__Button {
+    border: 0;
+    outline: none;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    background-color: #ff9800;
+    cursor: pointer;
+    font-weight: 700;
+    border: 2px solid #ff9800;
+    transition: 0.3s;
+}
+
+.Send__Button:hover{
+    background-color: transparent;
+}
+
+
+@media screen and (min-width : 0px) and (max-width : 600px) { 
+
+    .Sender__Part, .ReplyTo__Part {
+        flex-direction: column; }
+        .Sender__Part__Name, .Sender__Part__Email, .ReplyTo__Part__Name, .ReplyTo__Part__Email {
+            width: 100%;
+            margin-bottom: 10px;
+
+        }
+  }
+  
