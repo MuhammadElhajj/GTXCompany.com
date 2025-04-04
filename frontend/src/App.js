@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';  
 import './css/Body.css'
-import './css/Footer.css'
+//import './css/Footer.css'
 import './css/Form.css'
 import './css/Header.css'
 import './css/Mian.css'
