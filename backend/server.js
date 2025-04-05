@@ -7,7 +7,7 @@
     dotenv.config();  // لتحميل المتغيرات البيئية
 
     const app = express();
- const port = process.env.PORT ;
+ const port = const port = process.env.PORT || 4000; 
 
     app.use(cors());
     app.use(express.json());
