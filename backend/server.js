@@ -8,7 +8,7 @@
 
     const app = express();
  // const port = process.env.PORT || 4000;  
- const port = process.env.PORT ;  
+ const port = process.env.PORT || "https://gtxcompany-backend-com.onrender.com" ;  
 
     app.use(cors());
     app.use(express.json());
