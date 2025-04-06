@@ -67,7 +67,7 @@ import ScrollToTopButton from './components/ScrollButton';
 
       return (
         <div className="App">
-          {status && <SuccessMessage Status = {status}  SetStatus = {setStatus}/> }
+          // {status && <SuccessMessage Status = {status}  SetStatus = {setStatus}/> }
           {/* : <FailedMessage/> */}
           {/* <button class="scroll-button" onClick={scrollToTop} ><FaAngleDoubleUp/></button> */}
           <ScrollToTopButton/>
