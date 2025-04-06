@@ -10,6 +10,7 @@ function SuccessMessage({SetStatus , Status}) {
       <h2>Success</h2>
       <p>Message has been sent</p>
       <button onClick={successButton}>Ok</button>
+      {Status}
     </div>
   );
 }
